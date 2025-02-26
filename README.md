@@ -1,2 +1,2 @@
 # Four-card
-Four card feature
+Four-card-feature
