@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding-top: 20px;
+}
+
+main {
+  height: max-content;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  color: hsl(234, 12%, 34%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.small-header {
+  font-family: "poppins", serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.big-header {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "poppins", serif;
+}
+
+.header p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 15px;
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block {
+  background-color: white;
+  border-radius: 8px;
+  font-family: "poppins", serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.block p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+  color: hsl(229, 6%, 66%);
+}
+
+.one {
+  border-top: 4px solid #45d3d3;
+}
+
+.two {
+  border-top: 4px solid #ea5353;
+}
+
+.three {
+  border-top: 4px solid #fcaf4a;
+}
+
+.four {
+  border-top: 4px solid #549ef2;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-height: 100vh;
+  }
+
+  section {
+    max-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .small-header,
+  .big-header {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .block {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header p {
+    font-size: 14px;
+  }
+
+  .block {
+    margin: 15px auto;
+  }
+}
