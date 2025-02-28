@@ -20,7 +20,8 @@ main {
   max-width: 1200px;
   margin: 0;
   padding: 20px;
-  color: hsl(234, 12%, 34%);
+  /* color: hsl(234, 12%, 34%); */
+  color: hsl(212, 6%, 44%);
 }
 
 .header {
